@@ -72,6 +72,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
+.heading-home {
+  font-family: "Black Han Sans", Arial, sans-serif;
+}
+
 p {
   margin-top: 0;
   margin-bottom: 1rem; }
@@ -8345,13 +8349,13 @@ h1, h2, h3, h4, h5,
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    font-size: 41vw;
+    font-size: 16vw;
     text-transform: uppercase;
     z-index: 1;
     color: #fff;
-    color: transparent;
+    /* color: transparent; */
     line-height: .1vh;
-    -webkit-text-fill-color: transparent;
+    /* -webkit-text-fill-color: transparent; */
     /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #fff; }
@@ -8928,6 +8932,23 @@ textarea.form-control {
     font-weight: 400;
     display: block;
     text-align: right; }
+
+    .heading-home u {
+      text-decoration: none; /* Remove default underline */
+      position: relative;
+    }
+
+    /* Pseudo-element for the underline */
+    .heading-home u::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 2px; /* Adjust the thickness of the underline */
+      background-color: red; /* Change the underline color to red */
+      position: absolute;
+      bottom: -5px; /* Adjust the position of the underline */
+      left: 0;
+    }
 
 .heading-section.heading-section-white .subheading {
   color: rgba(255, 255, 255, 0.9); }
